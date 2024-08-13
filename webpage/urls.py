@@ -7,6 +7,6 @@ urlpatterns = [
     path("contact/", views.contactPage, name= "contact-page"),
     path('for/', views.forPage, name="for-page"),
     path('card/', views.cardPage, name="card-page"),
-    path('color/', views.cardcolorPage, name="color-page"),
+    path('color/', views.cardColorPage, name="color-page"),
 
 ]

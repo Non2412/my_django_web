@@ -24,9 +24,12 @@ def cardPage(request):
 
     return render(request, 'card.html', context)
 
-def cardcolorPage(request):
-    context = {}
-    lt = list(range(0,100))
-    context["list"] = lt
+def cardColorPage(request):
+    context = {
+        'color': '',
+    }
+
+    if request.method == "GET":
+        context['color'] = request.GET.get('color')
 
     return render(request, 'card_color.html', context)
