@@ -9,8 +9,6 @@ def aboutPage(request):
 def contactPage(request):
     return render(request, 'contact.html')
 
-def forPage(request):
-    return render(request, 'for_test.html')
 
 def forPage(request):
     context = {}
@@ -18,3 +16,17 @@ def forPage(request):
     context["list"] = lt
 
     return render(request, 'for_test.html', context)   
+
+def cardPage(request):
+    context = {}
+    lt = list(range(0,100))
+    context["list"] = lt
+
+    return render(request, 'card.html', context)
+
+def cardcolorPage(request):
+    context = {}
+    lt = list(range(0,100))
+    context["list"] = lt
+
+    return render(request, 'card_color.html', context)

@@ -80,12 +80,42 @@
         <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
           <div class="sb-sidenav-menu">
             <div class="nav">
-              <div class="sb-sidenav-menu-heading">Core</div>
-              <a class="nav-link" href="index.html">
+              <div class="sb-sidenav-menu-heading">หมวดหมู่</div>
+              <a class="nav-link" href="{% url 'index-page' %}">
                 <div class="sb-nav-link-icon">
                   <i class="fas fa-tachometer-alt"></i>
                 </div>
-                Dashboard
+                หน้าแรก
+              </a>
+              <a class="nav-link" href="{% url 'about-page' %}">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                ประวัติ
+              </a>
+              <a class="nav-link" href="{% url 'contact-page' %}">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                ติดต่อ
+              </a>
+              <a class="nav-link" href="{% url 'for-page' %}">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                หน้า table
+              </a>
+              <a class="nav-link" href="{% url 'card-page' %}">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                หน้า card
+              </a>
+              <a class="nav-link" href="{% url 'color-page' %}">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                หน้า card_color
               </a>
               <div class="sb-sidenav-menu-heading">Interface</div>
               <a
